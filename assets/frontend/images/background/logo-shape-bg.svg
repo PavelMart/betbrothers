@@ -1,0 +1,26 @@
+<svg width="1678" height="1470" viewBox="0 0 874 735" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Fill 8</title>
+  <defs>
+    <linearGradient x1="0%" y1="100%" y2="0%" id="logo-shape-bg-c">
+      <stop stop-color="#FA5153" offset="0%"/>
+      <stop stop-color="#FA5651" offset="12.45%"/>
+      <stop stop-color="#FA5651" offset="12.492%"/>
+      <stop stop-color="#FC624D" offset="45.023%"/>
+      <stop stop-color="#FF7645" offset="100%"/>
+    </linearGradient>
+    <path
+      d="M188.678 1204.796c-85.867 85.932-103.226 220.312-59.62 355.318 55.605-16.025 193.78-22.18 422.627 53.464 194.593 64.263 327.826 164.78 368.206 224.422 68.02-118.308 48.132-287.85-49.083-436.767-23.81-36.464-52.24-71.696-85.124-104.605-162.961-163.132-382.571-216.62-529.89-140.72-24.577 12.657-47.135 28.915-67.116 48.888z"
+      id="logo-shape-bg-b"/>
+    <filter x="-2%" y="-1.7%" width="104.1%" height="104.9%" filterUnits="objectBoundingBox" id="logo-shape-bg-a">
+      <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.980392157 0 0 0 0 0.345098039 0 0 0 0 0.196078431 0 0 0 0.2 0"
+                     in="shadowBlurOuter1"/>
+    </filter>
+  </defs>
+  <g transform="translate(-96 -1117)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#logo-shape-bg-a)" xlink:href="#logo-shape-bg-b"/>
+    <use fill="url(#logo-shape-bg-c)" xlink:href="#logo-shape-bg-b"/>
+  </g>
+</svg>
