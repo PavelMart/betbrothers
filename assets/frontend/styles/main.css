@@ -8494,9 +8494,6 @@ a.text-dark:hover {
   .header .navbar-brand.desktop {
     display: none;
   }
-  .header .navbar-brand.mobile img {
-    width: 200%;
-  }
 }
 @media (min-width: 992px) {
   .header .navbar {
