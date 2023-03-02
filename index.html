@@ -19,12 +19,12 @@
     <section class="hero-section home full">
       <header class="header">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand mobile" href="/">
+          <!-- <a class="navbar-brand mobile" href="/">
             <img src="./assets/img/logo/mobile-logo.svg" alt="Mobile Logo" />
           </a>
           <a class="navbar-brand desktop" href="/">
             <img src="./assets/img/logo/desctop-logo.svg" alt="Desctop Logo" />
-          </a>
+          </a> -->
           <button
             class="navbar-toggler"
             type="button"
@@ -99,15 +99,6 @@
               </div>
               <h5 class="feature-title">Best Odds and Highest Liquidity</h5>
               <p>We focus on bringing you the best odds and best sportsbook choices for you.</p>
-            </a>
-          </div>
-          <div class="features-list-col">
-            <a href="/features/team-leagues" class="features-list-item">
-              <div class="icon-wrap">
-                <img src="./assets/img/advantages/setup-account.png" alt="Easy Account Setup" />
-              </div>
-              <h5 class="feature-title">Easy Account Setup</h5>
-              <p>We will make it easy for you. Just click Register and let us do the rest.</p>
             </a>
           </div>
           <div class="features-list-col">
@@ -259,7 +250,7 @@
 
     <div class="popup-container">
       <div class="login-validation-wrap">
-        <form action="https://www.sportyhq.com/sign_up" class="form-signin" id="x_create_account_form" method="post" accept-charset="utf-8">
+        <form action="" class="form-signin" id="x_create_account_form" method="post" accept-charset="utf-8">
           <div id="sign_up_info">
             <a href="/" class="brand text-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.22 81.66">
@@ -327,6 +318,19 @@
             <div class="form-group">
               <label for="inputEmail2" class="sr-only">Email</label>
               <input type="email" id="inputEmail2" class="form-control" placeholder="Email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="inputTelegram" class="sr-only">Email</label>
+              <input type="text" id="inputTelegram" class="form-control" placeholder="Telegram (optional)" name="telegram" />
+            </div>
+            <div class="form-group">
+              <label for="selectBookmaker" class="sr-only">Choose a bookmaker</label>
+              <select name="bookmaker" id="selectBookmaker" class="form-control" required>
+                <option disabled>Choose a bookmaker</option>
+                <option value="var1">Variant 1</option>
+                <option value="var2">Variant 2</option>
+                <option value="var3">Variant 3</option>
+              </select>
             </div>
             <div class="checkbox mb-4 mt-4">
               <label class="custom-control custom-checkbox">
