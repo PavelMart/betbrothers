@@ -3680,7 +3680,9 @@ tbody.collapse.show {
   justify-content: space-between;
 }
 .navbar-brand {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
@@ -8484,10 +8486,15 @@ a.text-dark:hover {
 }
 @media (min-width: 992px) {
   .header .navbar-brand.mobile {
+    display: none;
   }
 }
 @media (max-width: 991px) {
   .header .navbar-brand.desktop {
+    display: none;
+  }
+  .header .navbar-brand.mobile img {
+    width: 200%;
   }
 }
 @media (min-width: 992px) {
