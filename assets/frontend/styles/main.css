@@ -248,13 +248,6 @@ textarea {
 table {
   border-collapse: collapse;
 }
-caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  color: #868e96;
-  text-align: left;
-  caption-side: bottom;
-}
 th {
   text-align: inherit;
 }
@@ -316,26 +309,6 @@ textarea {
   overflow: auto;
   resize: vertical;
 }
-fieldset {
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-legend {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  padding: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  line-height: inherit;
-  color: inherit;
-  white-space: normal;
-}
-progress {
-  vertical-align: baseline;
-}
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -352,14 +325,8 @@ progress {
   font: inherit;
   -webkit-appearance: button;
 }
-output {
-  display: inline-block;
-}
 summary {
   display: list-item;
-}
-template {
-  display: none;
 }
 [hidden] {
   display: none !important;
@@ -8517,12 +8484,10 @@ a.text-dark:hover {
 }
 @media (min-width: 992px) {
   .header .navbar-brand.mobile {
-    display: none;
   }
 }
 @media (max-width: 991px) {
   .header .navbar-brand.desktop {
-    display: none;
   }
 }
 @media (min-width: 992px) {
