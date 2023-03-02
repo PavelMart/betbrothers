@@ -14,6 +14,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/frontend/favicons/favicon-16x16.png" /> -->
     <link rel="manifest" href="/assets/frontend/manifest.json" />
     <!-- <link rel="shortcut icon" href="/assets/frontend/favicons/favicon.ico" /> -->
+    <script>
+      // Отправка данных на сервер
+      const sendMail = async (event, php) => {
+        event.preventDefault();
+        console.log("Отправка запроса");
+
+        try {
+          const response = await fetch(php, {
+            method: "POST",
+            body: new FormData(event.target),
+          });
+          const data = await response.json();
+          console.log(data);
+          alert(data.result);
+        } catch (error) {
+          alert(error, error.message);
+        }
+      };
+    </script>
   </head>
   <body>
     <section class="hero-section home full">
@@ -250,7 +269,7 @@
 
     <div class="popup-container">
       <div class="login-validation-wrap">
-        <form action="" class="form-signin" id="x_create_account_form" method="post" accept-charset="utf-8">
+        <form enctype="multipart/form-data" method="post" class="form-signin" id="form" accept-charset="utf-8" onsubmit="sendMail(event, 'send.php')">
           <div id="sign_up_info">
             <a href="/" class="brand text-center">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382.22 81.66">
@@ -320,7 +339,7 @@
               <input type="email" id="inputEmail2" class="form-control" placeholder="Email" name="email" required />
             </div>
             <div class="form-group">
-              <label for="inputTelegram" class="sr-only">Email</label>
+              <label for="inputTelegram" class="sr-only">Telegram</label>
               <input type="text" id="inputTelegram" class="form-control" placeholder="Telegram (optional)" name="telegram" />
             </div>
             <div class="form-group">
