@@ -3683,6 +3683,7 @@ tbody.collapse.show {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 135px;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
