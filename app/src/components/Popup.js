@@ -1,14 +1,13 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { toggle } from "../store/data/data.slice";
+import { useDispatch } from "react-redux";
+import { closePopup } from "../store/data/data.slice";
 
-const Popup = ({ children }) => {
-  const isOpen = useSelector((state) => state.data.isOpen);
+const Popup = ({ children, isOpen, style = {}, innerStyle = {} }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className={["popup-container", isOpen ? "active" : ""].join(" ")} onClick={() => dispatch(toggle())}>
-      <div className="login-validation-wrap" onClick={(e) => e.stopPropagation()}>
+    <div style={{ ...style }} className={["popup-container", isOpen ? "active" : ""].join(" ")} onClick={() => dispatch(closePopup())}>
+      <div style={{ ...innerStyle }} className="login-validation-wrap" onClick={(e) => e.stopPropagation()}>
         {children}
       </div>
     </div>

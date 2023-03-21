@@ -1,10 +1,31 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect, useRef, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { openPartnersPopup } from "../store/data/data.slice";
 import RegisterBtn from "./UI/RegisterBtn";
-import ShowMoreBtn from "./UI/ShowMoreBtn";
 
 const Main = () => {
-  const { features, aboutUs, partners, getStarted } = useSelector((state) => state.data.data.sections);
+  const [active, setActive] = useState(null);
+
+  const partner_1 = useRef(null);
+  const partner_2 = useRef(null);
+  const partner_3 = useRef(null);
+
+  const {
+    data: {
+      sections: { features, aboutUs, partners, getStarted },
+    },
+  } = useSelector((state) => state.data);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      if (window.pageYOffset < partner_1.current.offsetTop - window.screen.height / 2.5) setActive(null);
+      if (window.pageYOffset >= partner_1.current.offsetTop - window.screen.height / 2.5) setActive(partner_1.current);
+      if (window.pageYOffset >= partner_2.current.offsetTop - window.screen.height / 2.5) setActive(partner_2.current);
+      if (window.pageYOffset >= partner_3.current.offsetTop - window.screen.height / 2.5) setActive(partner_3.current);
+    });
+  }, [partner_1, partner_2, partner_3]);
+
   return (
     <>
       <section id="features" className="features-list-section wide-section">
@@ -41,6 +62,7 @@ const Main = () => {
           </div>
         </div>
       </section>
+      <div className="divider"></div>
       <section id="about-us" className="about-section">
         <div className="container">
           <div className="row justify-content-center">
@@ -51,7 +73,7 @@ const Main = () => {
                 <div className="offset-lg-1 col-lg-5 col-md-6 col-12 text-center image-col second-order">
                   <div style={{ overflow: "hidden", borderRadius: 30, padding: 0 }}>
                     <img
-                      src="/assets/images/photo.jpg"
+                      src="/assets/images/photo.png"
                       className="img-fluid"
                       alt="sportyhq logo"
                       style={{ width: "100%", height: "100%" }}
@@ -59,7 +81,7 @@ const Main = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-12">
-                  <div>
+                  <div className="abous-us__text">
                     <p>{aboutUs.firstParagraph}</p>
                     <p>{aboutUs.secondParagraph}</p>
                     <p>{aboutUs.thirdParagraph}</p>
@@ -81,23 +103,37 @@ const Main = () => {
           </div>
           <div className="container">
             <div className="partners-list">
-              <div className="partners-list-col">
-                <span>
-                  <img src="/assets/images/partners/laystars.png" alt="laystars" className="img-fluid" />
-                </span>
+              <div
+                ref={partner_1}
+                className={["partners-list-col", active === partner_1.current && "active"].join(" ")}
+                onClick={() => {
+                  dispatch(openPartnersPopup("laystars"));
+                }}
+              >
+                <img src="/assets/images/partners/laystars.png" alt="laystars" className="img-fluid" />
+                <span>more</span>
               </div>
-              <div className="partners-list-col">
-                <span>
-                  <img src="/assets/images/partners/ps3838.png" alt="ps3838" className="img-fluid" />
-                </span>
+              <div
+                ref={partner_2}
+                className={["partners-list-col", active === partner_2.current && "active"].join(" ")}
+                onClick={() => {
+                  dispatch(openPartnersPopup("ps3838"));
+                }}
+              >
+                <img src="/assets/images/partners/ps3838.png" alt="ps3838" className="img-fluid" />
+                <span>more</span>
               </div>
-              <div className="partners-list-col">
-                <span>
-                  <img src="/assets/images/partners/sportsbetio.png" alt="sportsbet" className="img-fluid" />
-                </span>
+              <div
+                ref={partner_3}
+                className={["partners-list-col", active === partner_3.current && "active"].join(" ")}
+                onClick={() => {
+                  dispatch(openPartnersPopup("sportsbet"));
+                }}
+              >
+                <img src="/assets/images/partners/sportsbetio.png" alt="sportsbet" className="img-fluid" />
+                <span>more</span>
               </div>
             </div>
-            <ShowMoreBtn />
           </div>
         </div>
       </section>

@@ -1,4 +1,22 @@
 {
+  "languages": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/400px-Flag_of_Russia.svg.png",
+      "language": "russian"
+    },
+    {
+      "src": "https://media.baamboozle.com/uploads/images/228994/1655130764_8698.webp",
+      "language": "english"
+    },
+    {
+      "src": "https://alicansaglamblog.files.wordpress.com/2020/10/dc1b8-ispanya.jpg",
+      "language": "spain"
+    },
+    {
+      "src": "https://a.allegroimg.com/s256/1161e8/8a7eb2b84db0ad590adffa897469/Flaga-Ukraina-150x90-Tunel",
+      "language": "ukraine"
+    }
+  ],
   "english": {
     "menu": {
       "home": "Home",
@@ -68,7 +86,211 @@
       }
     }
   },
-  "russian": {},
-  "ukraine": {},
-  "spain": {}
+  "russian": {
+    "menu": {
+      "home": "Главная",
+      "features": "Преимущества",
+      "aboutUs": "О нас",
+      "partners": "Партнеры"
+    },
+    "registerButton": "Зарегистрироваться",
+    "promoTitle": "The Best betting experience!",
+    "promoText": "RealProBet is proud to be the exclusive partner of some of the most highly respected and reputable betting platforms in the industry.",
+    "sections": {
+      "features": {
+        "title": "Познакомьтесь с нашими возможностями",
+        "featuresList": {
+          "first": {
+            "title": "Быстрые - Легкие - Безопасные платежи",
+            "text": "Мы делаем вывод средств мгновенным и безопасным. Ознакомьтесь с нашими способами оплаты."
+          },
+          "second": {
+            "title": "Лучшие коэффициенты и самая высокая ликвидность",
+            "text": "Мы сосредоточены на том, чтобы предоставить вам лучшие коэффициенты и лучший выбор спортивных букмекеров для вас."
+          },
+          "third": {
+            "title": "Простая настройка аккаунта",
+            "text": "Мы сделаем это легким для вас. Просто нажмите кнопку Регистрация и позвольте нам сделать все остальное."
+          }
+        }
+      },
+      "aboutUs": {
+        "title": "О нас",
+        "titleText": "Мы рады сообщить, что являемся эксклюзивными партнерами некоторых из самых авторитетных и высоко оцененных букмекерских платформ в отрасли.",
+        "firstParagraph": "В нашей брокерской сервисе ставок мы тесно сотрудничаем с различными партнерами, чтобы предоставить нашим клиентам самые эксклюзивные предложения и возможности для размещения ставок.",
+        "secondParagraph": "Наше партнерство позволяет нам предлагать нашим клиентам самые высокие лимиты ставок и лучшие цены, доступные на рынке. В результате вы всегда можете быть уверены, что получите максимальную отдачу от ставок с нами.",
+        "thirdParagraph": "Мы в Real Pro Bet понимаем важность доверия и надежности, когда речь идет о ставках, поэтому мы работаем только с лицензированными букмекерами, которые не ограничивают и не запрещают выигрывать игрокам. Это гарантирует, что наши клиенты могут делать ставки с уверенностью, зная, что они получают честные и прозрачные услуги. Итак, независимо от того, являетесь ли вы опытным беттором или только начинаете, наши услуги брокера ставок и эксклюзивные партнерские отношения с лучшими букмекерами на рынке обеспечат вам максимальный опыт ставок. Доверьтесь нам, мы предоставим вам самые эксклюзивные предложения и возможности для крупного выигрыша."
+      },
+      "partners": {
+        "title": "Наши партнеры"
+      },
+      "getStarted": {
+        "title": "Готовы начать?",
+        "text": "Создайте свой профиль. Это бесплатно."
+      }
+    },
+    "copyrightYear": "2023",
+    "copyrightText": "© Real Pro Bet, LLC. ALL Rights Reserved.",
+    "form": {
+      "title": "Create account",
+      "firstNamePlaseholder": "First Name",
+      "lastNamePlaceholder": "Last Name",
+      "telegramPlaceholder": "Telegram (optional)",
+      "platforms": "Choose platforms",
+      "agreement": {
+        "one": "I agree to Real Pro Bet's",
+        "termsOfServiceLink": "terms of service",
+        "three": "and",
+        "privacyPolicyLink": "privacy policy"
+      },
+      "sendButton": "Sign Up",
+      "confirmationButton": "Ok",
+      "success": {
+        "title": "Success",
+        "text": "We've just sent you an activation email. Please check your email and click the link in the email we sent. If you don't receive it momentarily, please check your spam folder to."
+      },
+      "error": {
+        "title": "Somethink went wrong",
+        "text": "Please, try it again later"
+      }
+    }
+  },
+  "ukraine": {
+    "menu": {
+      "home": "Home",
+      "features": "Features",
+      "aboutUs": "About-Us",
+      "partners": "Partners"
+    },
+    "registerButton": "Register now",
+    "promoTitle": "The Best betting experience!",
+    "promoText": "RealProBet is proud to be the exclusive partner of some of the most highly respected and reputable betting platforms in the industry.",
+    "sections": {
+      "features": {
+        "title": "Explore our features",
+        "featuresList": {
+          "first": {
+            "title": "Fast – Easy – Secure Payments",
+            "text": "We make your withdrawals instantly and secure. Check out our payment methods."
+          },
+          "second": {
+            "title": "Best Odds and Highest Liquidity",
+            "text": "We focus on bringing you the best odds and best sportsbook choices for you."
+          },
+          "third": {
+            "title": "Easy Account Setup",
+            "text": "We will make it easy for you. Just click Register and let us do the rest."
+          }
+        }
+      },
+      "aboutUs": {
+        "title": "About Us",
+        "titleText": "We are proud to announce that we are the exclusive partners of some of the most reputable and highly-regarded betting platforms in the industry.",
+        "firstParagraph": "At our bet broker service, we work closely with different partners to provide our clients with the most exclusive offers and opportunities to place their bets.",
+        "secondParagraph": "Our partnerships allows us to offer our clients the highest betting limits and the best prices available in the market. As a result, you can always be sure that you are getting the most out of your betting experience with us.",
+        "thirdParagraph": "We at Real Pro Bet understand the importance of trust and reliability when it comes to betting, which is why we only work with licensed bookmakers who do not limit or ban winning players. This ensures that our clients can place their bets with confidence, knowing that they are receiving fair and transparent services. So, whether you are a seasoned bettor or just starting out, our bet broker service and exclusive partnerships with the best bookies on the market will give you the ultimate betting experience. Trust us to provide you with the most exclusive offers and opportunities to win big."
+      },
+      "partners": {
+        "title": "Our partners"
+      },
+      "getStarted": {
+        "title": "Ready to get started?",
+        "text": "Create your profile. It's free."
+      }
+    },
+    "copyrightYear": "2023",
+    "copyrightText": "© Real Pro Bet, LLC. ALL Rights Reserved.",
+    "form": {
+      "title": "Create account",
+      "firstNamePlaseholder": "First Name",
+      "lastNamePlaceholder": "Last Name",
+      "telegramPlaceholder": "Telegram (optional)",
+      "platforms": "Choose platforms",
+      "agreement": {
+        "one": "I agree to Real Pro Bet's",
+        "termsOfServiceLink": "terms of service",
+        "three": "and",
+        "privacyPolicyLink": "privacy policy"
+      },
+      "sendButton": "Sign Up",
+      "confirmationButton": "Ok",
+      "success": {
+        "title": "Success",
+        "text": "We've just sent you an activation email. Please check your email and click the link in the email we sent. If you don't receive it momentarily, please check your spam folder to."
+      },
+      "error": {
+        "title": "Somethink went wrong",
+        "text": "Please, try it again later"
+      }
+    }
+  },
+  "spain": {
+    "menu": {
+      "home": "Home",
+      "features": "Features",
+      "aboutUs": "About-Us",
+      "partners": "Partners"
+    },
+    "registerButton": "Register now",
+    "promoTitle": "The Best betting experience!",
+    "promoText": "RealProBet is proud to be the exclusive partner of some of the most highly respected and reputable betting platforms in the industry.",
+    "sections": {
+      "features": {
+        "title": "Explore our features",
+        "featuresList": {
+          "first": {
+            "title": "Fast – Easy – Secure Payments",
+            "text": "We make your withdrawals instantly and secure. Check out our payment methods."
+          },
+          "second": {
+            "title": "Best Odds and Highest Liquidity",
+            "text": "We focus on bringing you the best odds and best sportsbook choices for you."
+          },
+          "third": {
+            "title": "Easy Account Setup",
+            "text": "We will make it easy for you. Just click Register and let us do the rest."
+          }
+        }
+      },
+      "aboutUs": {
+        "title": "About Us",
+        "titleText": "We are proud to announce that we are the exclusive partners of some of the most reputable and highly-regarded betting platforms in the industry.",
+        "firstParagraph": "At our bet broker service, we work closely with different partners to provide our clients with the most exclusive offers and opportunities to place their bets.",
+        "secondParagraph": "Our partnerships allows us to offer our clients the highest betting limits and the best prices available in the market. As a result, you can always be sure that you are getting the most out of your betting experience with us.",
+        "thirdParagraph": "We at Real Pro Bet understand the importance of trust and reliability when it comes to betting, which is why we only work with licensed bookmakers who do not limit or ban winning players. This ensures that our clients can place their bets with confidence, knowing that they are receiving fair and transparent services. So, whether you are a seasoned bettor or just starting out, our bet broker service and exclusive partnerships with the best bookies on the market will give you the ultimate betting experience. Trust us to provide you with the most exclusive offers and opportunities to win big."
+      },
+      "partners": {
+        "title": "Our partners"
+      },
+      "getStarted": {
+        "title": "Ready to get started?",
+        "text": "Create your profile. It's free."
+      }
+    },
+    "copyrightYear": "2023",
+    "copyrightText": "© Real Pro Bet, LLC. ALL Rights Reserved.",
+    "form": {
+      "title": "Create account",
+      "firstNamePlaseholder": "First Name",
+      "lastNamePlaceholder": "Last Name",
+      "telegramPlaceholder": "Telegram (optional)",
+      "platforms": "Choose platforms",
+      "agreement": {
+        "one": "I agree to Real Pro Bet's",
+        "termsOfServiceLink": "terms of service",
+        "three": "and",
+        "privacyPolicyLink": "privacy policy"
+      },
+      "sendButton": "Sign Up",
+      "confirmationButton": "Ok",
+      "success": {
+        "title": "Success",
+        "text": "We've just sent you an activation email. Please check your email and click the link in the email we sent. If you don't receive it momentarily, please check your spam folder to."
+      },
+      "error": {
+        "title": "Somethink went wrong",
+        "text": "Please, try it again later"
+      }
+    }
+  }
 }

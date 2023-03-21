@@ -12,7 +12,7 @@ const NavbarToggler = () => {
       aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation"
-      // onClick={() => dispatch(toggleMenu())}
+      onClick={() => dispatch(toggleMenu())}
     >
       <span className="navbar-toggler-icon"> </span>
     </button>
