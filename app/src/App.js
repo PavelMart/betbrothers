@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import Footer from "./components/Footer";
@@ -12,10 +12,28 @@ import { getData } from "./store/data/data.slice";
 
 function App() {
   const { loading, isFormOpen, isPartnersOpen, language } = useSelector((state) => state.data);
+  const [font, setFont] = useState("FilsonPro");
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getData(language));
+
+    switch (language) {
+      case "english":
+        setFont("FilsonPro");
+        break;
+      case "russian":
+        setFont("Russian");
+        break;
+      case "ukraine":
+        setFont("Ukraine");
+        break;
+      case "spain":
+        setFont("Spain");
+        break;
+      default:
+        break;
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
 
@@ -25,11 +43,7 @@ function App() {
 
   return (
     <ErrorBoundary>
-      <div
-        className="App"
-        onClick={closeMenu}
-        style={{ fontFamily: [language === "russian" ? "Russian" : "FilsonPro", "Helvetica Neue, Arial, sans-serif"].join(", ") }}
-      >
+      <div className="App" onClick={closeMenu} style={{ fontFamily: [font, "Helvetica Neue, Arial, sans-serif"].join(", ") }}>
         {loading === "pending" ? (
           <div className="loading" id="loading" />
         ) : (

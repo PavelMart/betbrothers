@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @font-face {
   font-family: FilsonPro;
-  src: url("../fonts/357E40_0_0.woff");
-  src: url("../fonts/357E40_0_0.woff") format("woff"), url("../fonts/357E40_0_0.ttf") format("truetype");
+  src: url("../fonts/font-english-bold.woff");
+  src: url("../fonts/font-english-bold.woff") format("woff"), url("../fonts/font-english-bold.ttf") format("truetype");
   font-weight: 700;
 }
 @font-face {
   font-family: FilsonPro;
-  src: url("../fonts/357E40_1_0.woff");
-  src: url("../fonts/357E40_1_0.woff") format("woff"), url("../fonts/357E40_1_0.ttf") format("truetype");
+  src: url("../fonts/font-english-regular.woff");
+  src: url("../fonts/font-english-regular.woff") format("woff"), url("../fonts/font-english-regular.ttf") format("truetype");
   font-weight: 400;
 }
 @font-face {
@@ -21,6 +21,30 @@
   font-family: Russian;
   src: url("../fonts/font-russian-regular.woff");
   src: url("../fonts/font-russian-regular.woff") format("woff"), url("../fonts/font-russian-regular.woff") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Spain;
+  src: url("../fonts/font-spain-bold.woff");
+  src: url("../fonts/font-spain-bold.woff") format("woff"), url("../fonts/font-spain-bold.woff") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Spain;
+  src: url("../fonts/font-spain-regular.woff");
+  src: url("../fonts/font-spain-regular.woff") format("woff"), url("../fonts/font-spain-regular.woff") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Ukrain;
+  src: url("../fonts/font-ukraine-bold.woff");
+  src: url("../fonts/font-ukraine-bold.woff") format("woff"), url("../fonts/font-ukraine-bold.woff") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Ukrain;
+  src: url("../fonts/font-ukraine-regular.woff");
+  src: url("../fonts/font-ukraine-regular.woff") format("woff"), url("../fonts/font-ukraine-regular.woff") format("truetype");
   font-weight: 400;
 }
 @media print {
@@ -2219,4 +2243,5 @@ html {
 
 .abous-us__text {
   text-align: justify;
+  text-indent: 40px;
 }

@@ -127,8 +127,7 @@ const Form = () => {
                 <input type="checkbox" className="custom-control-input" name="terms" required />
                 <span className="custom-control-indicator"></span>
                 <span className="custom-control-description">
-                  {agreement.one} <a href="/terms-of-service">{agreement.termsOfServiceLink}</a> {agreement.three} {` `}
-                  <a href="/privacy-policy">{agreement.privacyPolicyLink}</a>.
+                  {agreement.map((phrase) => (phrase.link ? <a href={phrase.link}>{`${phrase.text} `}</a> : `${phrase.text} `))}
                 </span>
               </label>
             </div>

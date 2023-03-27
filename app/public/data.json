@@ -68,12 +68,24 @@
       "lastNamePlaceholder": "Last Name",
       "telegramPlaceholder": "Telegram (optional)",
       "platforms": "Choose platforms",
-      "agreement": {
-        "one": "I agree to Real Pro Bet's",
-        "termsOfServiceLink": "terms of service",
-        "three": "and",
-        "privacyPolicyLink": "privacy policy"
-      },
+      "agreement": [
+        {
+          "text": "I agree to Real Pro Bet's",
+          "link": null
+        },
+        {
+          "text": "terms of service",
+          "link": "/terms-of-service"
+        },
+        {
+          "text": "and",
+          "link": null
+        },
+        {
+          "text": "privacy policy",
+          "link": "/privacy-policy"
+        }
+      ],
       "sendButton": "Sign Up",
       "confirmationButton": "Ok",
       "success": {
@@ -137,12 +149,24 @@
       "lastNamePlaceholder": "Last Name",
       "telegramPlaceholder": "Telegram (optional)",
       "platforms": "Choose platforms",
-      "agreement": {
-        "one": "I agree to Real Pro Bet's",
-        "termsOfServiceLink": "terms of service",
-        "three": "and",
-        "privacyPolicyLink": "privacy policy"
-      },
+      "agreement": [
+        {
+          "text": "I agree to Real Pro Bet's",
+          "link": null
+        },
+        {
+          "text": "terms of service",
+          "link": "/terms-of-service"
+        },
+        {
+          "text": "and",
+          "link": null
+        },
+        {
+          "text": "privacy policy",
+          "link": "/privacy-policy"
+        }
+      ],
       "sendButton": "Sign Up",
       "confirmationButton": "Ok",
       "success": {
@@ -206,12 +230,24 @@
       "lastNamePlaceholder": "Last Name",
       "telegramPlaceholder": "Telegram (optional)",
       "platforms": "Choose platforms",
-      "agreement": {
-        "one": "I agree to Real Pro Bet's",
-        "termsOfServiceLink": "terms of service",
-        "three": "and",
-        "privacyPolicyLink": "privacy policy"
-      },
+      "agreement": [
+        {
+          "text": "I agree to Real Pro Bet's",
+          "link": null
+        },
+        {
+          "text": "terms of service",
+          "link": "/terms-of-service"
+        },
+        {
+          "text": "and",
+          "link": null
+        },
+        {
+          "text": "privacy policy",
+          "link": "/privacy-policy"
+        }
+      ],
       "sendButton": "Sign Up",
       "confirmationButton": "Ok",
       "success": {
@@ -275,12 +311,24 @@
       "lastNamePlaceholder": "Last Name",
       "telegramPlaceholder": "Telegram (optional)",
       "platforms": "Choose platforms",
-      "agreement": {
-        "one": "I agree to Real Pro Bet's",
-        "termsOfServiceLink": "terms of service",
-        "three": "and",
-        "privacyPolicyLink": "privacy policy"
-      },
+      "agreement": [
+        {
+          "text": "I agree to Real Pro Bet's",
+          "link": null
+        },
+        {
+          "text": "terms of service",
+          "link": "/terms-of-service"
+        },
+        {
+          "text": "and",
+          "link": null
+        },
+        {
+          "text": "privacy policy",
+          "link": "/privacy-policy"
+        }
+      ],
       "sendButton": "Sign Up",
       "confirmationButton": "Ok",
       "success": {
